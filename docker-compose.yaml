@@ -5,7 +5,7 @@ services:
     image: nginx
     volumes:
      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
-     - ./nginx/default.conf:/etc/nginx/conf.b/default.conf
+     - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     ports:
      - "8080:80"
     environment:
@@ -17,7 +17,7 @@ services:
      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     ports:
-     - "8080:80"
+     - "1212:12"
     environment:
      - NGINX_PORT=80
 
